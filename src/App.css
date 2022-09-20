@@ -2,7 +2,7 @@
 
 
 .Nitm { position: relative; display: inline-block;}
-.Nitm::after { content: "N"; position: absolute; display: block; width: 10px; height: 10px; top: 3px; right: -13px; color: var(--ac); font-family: Noto Sans KR; font-size: 10px; font-weight: 900; } 
+.Nitm::after { content: "N"; position: absolute; display: block; width: 10px; height: 10px; top: -2px; right: -12px; color: var(--ac); font-family: Noto Sans KR; font-size: 10px; font-weight: 800; } 
 /* 공통 사용 style */
 
 

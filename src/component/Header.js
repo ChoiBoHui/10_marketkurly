@@ -1,11 +1,10 @@
+import TopBanner from './TopBanner';
+
 const Header = () => {
     return (
-        <header>
+        <header className='Header'>
             {/* 탑 배너 */}
-            <div className="topBanner">
-                지금 가입하고 인기상품 <span>100원</span>에 받아가세요!
-                <i className="xi-close-thin"></i>
-            </div>
+            <TopBanner />
             {/* 상단 메뉴 */}
             <ul className="topMenu">
                 <li><a href="#!">회원가입</a></li>
@@ -27,7 +26,8 @@ const Header = () => {
                 <a href="#!" className="Nitm">뷰티컬리</a>
             </div>
             <div className="search">
-                <input type="search" />
+                <input type="search" placeholder="검색어를 입력해주세요" />
+                <i className="xi-search"></i>
             </div>
             <ul className="customerMenu">
                 <li>
@@ -78,3 +78,5 @@ const Header = () => {
         </header>
     )
 }
+
+export default Header;
