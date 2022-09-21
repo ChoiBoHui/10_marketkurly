@@ -7,3 +7,17 @@
 
 
 /* Header 시작 */
+
+
+
+
+
+/* MainVisual 시작 */
+.MainVisual figure { position: relative; height: 370px; background-repeat: no-repeat; background-position: center center; background-size: 100% auto; } 
+/* .MainVisual figure.on {  }  */
+.MainVisual .itm01 { background-image: url(../public/assets/images/main_01.jpg); } 
+.MainVisual .itm02 { background-image: url(../public/assets/images/main_02.jpg); } 
+.MainVisual .itm03 { background-image: url(../public/assets/images/main_03.jpg); } 
+.MainVisual .itm04 { background-image: url(../public/assets/images/main_04.jpg); } 
+.MainVisual .itm05 { background-image: url(../public/assets/images/main_05.jpg); } 
+.MainVisual .itm06 { background-image: url(../public/assets/images/main_06.jpg); } 

@@ -49,18 +49,18 @@ const Header = () => {
                         <li>
                             <a href="#!"><i className="xi-gift-o"></i>선물하기</a>
                             <ul className="SNB">
+                                <li><a href="#!">홍삼・즙</a></li>
                                 <li><a href="#!">건강식품</a></li>
-                                <li><a href="#!">건강식품</a></li>
-                                <li><a href="#!">건강식품</a></li>
-                                <li><a href="#!">건강식품</a></li>
+                                <li><a href="#!">과일・수산・정육</a></li>
+                                <li><a href="#!">베이커리・커피・차</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#!"><i className="xi-gift-o"></i>채소</a>
+                            <a href="#!"><i className="xi-glass"></i>와인</a>
                             <ul>
-                                <li><a href="#!">친환경</a></li>
-                                <li><a href="#!">친환경</a></li>
-                                <li><a href="#!">친환경</a></li>
+                                <li><a href="#!">레드와인</a></li>
+                                <li><a href="#!">화이트와인</a></li>
+                                <li><a href="#!">샴페인・스파클링</a></li>
                             </ul>
                         </li>
                     </ul>
