@@ -3,14 +3,14 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 
 const SLIDE = [
-    { id: 1, tit: "[귤림원] 당도선별 GAP 하우스 감귤 500g", sale: "7%", salePrice: "6,780 원", dimmedPrice: "7,300 원" },
-    { id: 2, tit: "[귤림원] 당도선별 GAP 하우스 감귤 500g", sale: "7%", salePrice: "6,780 원", dimmedPrice: "7,300 원" },
-    { id: 3, tit: "[귤림원] 당도선별 GAP 하우스 감귤 500g", sale: "7%", salePrice: "6,780 원", dimmedPrice: "7,300 원" },
-    { id: 4, tit: "[귤림원] 당도선별 GAP 하우스 감귤 500g", sale: "7%", salePrice: "6,780 원", dimmedPrice: "7,300 원" },
-    { id: 5, tit: "[귤림원] 당도선별 GAP 하우스 감귤 500g", sale: "7%", salePrice: "6,780 원", dimmedPrice: "7,300 원" },
-    { id: 6, tit: "[귤림원] 당도선별 GAP 하우스 감귤 500g", sale: "7%", salePrice: "6,780 원", dimmedPrice: "7,300 원" },
-    { id: 7, tit: "[귤림원] 당도선별 GAP 하우스 감귤 500g", sale: "7%", salePrice: "6,780 원", dimmedPrice: "7,300 원" },
-    { id: 8, tit: "[귤림원] 당도선별 GAP 하우스 감귤 500g", sale: "7%", salePrice: "6,780 원", dimmedPrice: "7,300 원" },
+    { id: 1, title: "[귤림원] 당도선별 GAP 하우스 감귤 500g", sale: "7%", salePrice: "6,780 원", dimmedPrice: "7,300 원", link: "#!" },
+    { id: 2, title: "[귤림원] 당도선별 GAP 하우스 감귤 500g", sale: "7%", salePrice: "6,780 원", dimmedPrice: "7,300 원", link: "#!" },
+    { id: 3, title: "[귤림원] 당도선별 GAP 하우스 감귤 500g", sale: "7%", salePrice: "6,780 원", dimmedPrice: "7,300 원", link: "#!" },
+    { id: 4, title: "[귤림원] 당도선별 GAP 하우스 감귤 500g", sale: "7%", salePrice: "6,780 원", dimmedPrice: "7,300 원", link: "#!" },
+    { id: 5, title: "[귤림원] 당도선별 GAP 하우스 감귤 500g", sale: "7%", salePrice: "6,780 원", dimmedPrice: "7,300 원", link: "#!" },
+    { id: 6, title: "[귤림원] 당도선별 GAP 하우스 감귤 500g", sale: "7%", salePrice: "6,780 원", dimmedPrice: "7,300 원", link: "#!" },
+    { id: 7, title: "[귤림원] 당도선별 GAP 하우스 감귤 500g", sale: "7%", salePrice: "6,780 원", dimmedPrice: "7,300 원", link: "#!" },
+    { id: 8, title: "[귤림원] 당도선별 GAP 하우스 감귤 500g", sale: "7%", salePrice: "6,780 원", dimmedPrice: "7,300 원", link: "#!" },
 ]
 
 const RecommendProducts = () => {
@@ -35,10 +35,13 @@ const RecommendProducts = () => {
                             <figure key={slide.id} className={'itm0' + slide.id + (idx === IDX ? ' on' : '')}>
                                 <div className="inner">
                                     <a className='link' href={slide.link}>
-                                        <p className='content'>{slide.content}</p>
-                                        <h2 className='title'>{slide.title}</h2>
-                                        <p className='desc'>{slide.desc}</p>
-                                        <p className='date'>{slide.date}</p>
+                                        <div className="imgContainer">
+                                            <img src={'%PUBLIC_URL%' + '/assets/images/thumbnail_0' + slide.id + '.jpg'} alt="" />
+                                        </div>
+                                        <p className='title'>{slide.title}</p>
+                                        <h2 className='sale'>{slide.sale}</h2>
+                                        <p className='salePrice'>{slide.salePrice}</p>
+                                        <p className='dimmedPrice'>{slide.dimmedPrice}</p>
                                     </a>
                                 </div>
                             </figure>
