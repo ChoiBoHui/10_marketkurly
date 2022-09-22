@@ -3,6 +3,7 @@
 
 .Nitm { position: relative; display: inline-block; } 
 .Nitm::after { content: "N"; position: absolute; display: block; width: 10px; height: 10px; top: -2px; right: -12px; color: var(--ac); font-family: Noto Sans KR; font-size: 10px; font-weight: 800; } 
+.sectionTitle {text-align: center; font-size: 28px; font-weight: 600; margin-bottom: 30px;}
 /* 공통 사용 style */
 
 
@@ -17,3 +18,13 @@
 /* .MainVisual figure.on { } */
 .MainVisual figure img { position: relative; height: 370px; background-repeat: no-repeat; background-position: center center; background-size: 100% 100%; object-fit: cover; } 
 .MainVisual figure .inner { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); } 
+
+
+
+/* RecommendProducts 시작 */
+.RecommendProducts .slick-slider { width: 1170px; margin: 0 auto; } 
+/* .RecommendProducts .slick-active .inner { margin-right: 20px; }  */
+.imgContainer img { width: 278px; height: 340px; object-fit: cover; } 
+
+/* LineBanner_01 시작 */
+.LineBanner_01 {width: 1170px; margin: 0 auto;}

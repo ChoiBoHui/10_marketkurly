@@ -22,12 +22,15 @@ const RecommendProducts = () => {
     const setting = {
         arrows: false,
         //dots: true,
+        infinite: false,
         afterChange: index => setIDX(index),
-        autoplay: true,
-        autoplaySpeed: 5000,
+        autoplay: false,
+        slidesToShow: 4,
+        slidesToScroll: 4
     }
     return (
         <section className='RecommendProducts'>
+            <h2 className='sectionTitle'>이 상품 어때요?</h2>
             <Slider {...setting} ref={mainSlide}>
                 {
                     SLIDE.map((slide, idx) => {
@@ -36,7 +39,7 @@ const RecommendProducts = () => {
                                 <div className="inner">
                                     <a className='link' href={slide.link}>
                                         <div className="imgContainer">
-                                            <img src={'%PUBLIC_URL%' + '/assets/images/thumbnail_0' + slide.id + '.jpg'} alt="" />
+                                            <img src={process.env.PUBLIC_URL + `/assets/images/thumbnail_0${idx + 1}.jpg`} alt="" />
                                         </div>
                                         <p className='title'>{slide.title}</p>
                                         <h2 className='sale'>{slide.sale}</h2>
@@ -49,6 +52,10 @@ const RecommendProducts = () => {
                     })
                 }
             </Slider>
+            <div className="slideArrows">
+                <button onClick={() => mainSlide.current.slickPrev()}><i className='xi-angle-left'></i></button>
+                <button onClick={() => mainSlide.current.slickNext()}><i className='xi-angle-right'></i></button>
+            </div>
         </section>
     )
 }
