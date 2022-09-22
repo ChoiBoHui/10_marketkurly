@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/10_marketkurly/static/css/main.0d65a84a.css",
+    "main.js": "/10_marketkurly/static/js/main.f4320612.js",
+    "static/media/main_02.jpg": "/10_marketkurly/static/media/main_02.2fec0658e0e8c8f2b042.jpg",
+    "static/media/main_01.jpg": "/10_marketkurly/static/media/main_01.09525758fb02a160f53b.jpg",
+    "static/media/main_03.jpg": "/10_marketkurly/static/media/main_03.54959eaa46d99a6c6e14.jpg",
+    "static/media/main_05.jpg": "/10_marketkurly/static/media/main_05.7e0964ccea4af5ced225.jpg",
+    "static/media/main_06.jpg": "/10_marketkurly/static/media/main_06.0195309cc6e37ef00c15.jpg",
+    "static/media/main_04.jpg": "/10_marketkurly/static/media/main_04.eaa03cf75e2b22ebc03d.jpg",
+    "index.html": "/10_marketkurly/index.html",
+    "main.0d65a84a.css.map": "/10_marketkurly/static/css/main.0d65a84a.css.map",
+    "main.f4320612.js.map": "/10_marketkurly/static/js/main.f4320612.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d65a84a.css",
+    "static/js/main.f4320612.js"
+  ]
+}
