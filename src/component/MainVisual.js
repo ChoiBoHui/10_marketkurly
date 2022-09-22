@@ -31,14 +31,15 @@ const MainVisual = () => {
                     SLIDE.map((slide, idx) => {
                         return (
                             <figure key={slide.id} className={'itm0' + slide.id + (idx === IDX ? ' on' : '')}>
-                                <div className="inner">
-                                    <a className='link' href={slide.link}>
+                                <a className='link' href={slide.link}>
+                                    <img src={process.env.PUBLIC_URL + `/assets/images/main_0${idx + 1}.jpg`} alt="" />
+                                    <div className="inner">
                                         <p className='content'>{slide.content}</p>
                                         <h2 className='title'>{slide.title}</h2>
                                         <p className='desc'>{slide.desc}</p>
                                         <p className='date'>{slide.date}</p>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
                             </figure>
                         )
                     })

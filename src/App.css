@@ -1,7 +1,7 @@
 :root { --mc:rgb(95, 0, 128); --pc:rgb(189, 118, 255); --ac:rgb(250, 98, 47); --lg:rgb(221, 221, 221); --rg:rgb(181, 181, 181); --mg:rgb(153, 153, 153); --dg:#444444; --bl:rgb(51, 51, 51); } 
 
 
-.Nitm { position: relative; display: inline-block;}
+.Nitm { position: relative; display: inline-block; } 
 .Nitm::after { content: "N"; position: absolute; display: block; width: 10px; height: 10px; top: -2px; right: -12px; color: var(--ac); font-family: Noto Sans KR; font-size: 10px; font-weight: 800; } 
 /* 공통 사용 style */
 
@@ -13,11 +13,7 @@
 
 
 /* MainVisual 시작 */
-.MainVisual figure { position: relative; height: 370px; background-repeat: no-repeat; background-position: center center; background-size: 100% auto; } 
-/* .MainVisual figure.on {  }  */
-.MainVisual .itm01 { background-image: url(../public/assets/images/main_01.jpg); } 
-.MainVisual .itm02 { background-image: url(../public/assets/images/main_02.jpg); } 
-.MainVisual .itm03 { background-image: url(../public/assets/images/main_03.jpg); } 
-.MainVisual .itm04 { background-image: url(../public/assets/images/main_04.jpg); } 
-.MainVisual .itm05 { background-image: url(../public/assets/images/main_05.jpg); } 
-.MainVisual .itm06 { background-image: url(../public/assets/images/main_06.jpg); } 
+.MainVisual figure { position: relative; } 
+/* .MainVisual figure.on { } */
+.MainVisual figure img { position: relative; height: 370px; background-repeat: no-repeat; background-position: center center; background-size: 100% 100%; object-fit: cover; } 
+.MainVisual figure .inner { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); } 
